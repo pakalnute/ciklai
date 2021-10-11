@@ -77,14 +77,68 @@ console.log('Ciklų kiekis: ', ciklas);*/
 //11. console.log’e, naudojant ciklą atspausdinti atsitiktinius skirtingus skaičius nuo 0 iki 10 (vienas skaičius vienoje eilutėje). 
 //Ciklas turi pasibaigti tada, kai atsitiktinių skaičių suma viršija 20, bet ne anksčiau nei po 11 ciklų;
 
+/*let random = 0;
+let suma = 0;
+let ciklas = 0;
+while ((suma < 20) || (ciklas <= 11)) {
+    ciklas++;
+    random = Math.trunc(Math.random() * 10 + 1);
+    suma += random;
+    console.log(random);
+}
+console.log('Suma: ', suma, ' Kiek ciklu: ', --ciklas);*/
+
 //12. console.log’e, naudojant ciklą atspausdinti skirtingus atsitiktinius skaičius nuo 0 iki 10 (vienas skaičius vienoje eilutėje). 
 //Ciklą kartoti kol bus sugeneruoti trys nelyginiai skaičiai;
+
+/*let random = 0;
+let sk = 0;
+while (sk < 3) {
+    random = Math.trunc(Math.random() * 10 + 1);
+    random % 2 !== 0 ? sk++ : '';
+    console.log(random);
+}*/
 
 //13. console.log’e, naudojant ciklą atspausdinti po porą skirtingų atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje). 
 //Ciklą kartoti tol, kol neiškris abu vienodi skaičiai;
 
+/*let random1 = 0;
+let random2 = 1;
+while (random1 !== random2) {
+    random1 = Math.trunc(Math.random() * 10 + 1);
+    random2 = Math.trunc(Math.random() * 10 + 1);
+    console.log(random1, ' ', random2);
+}*/
+
 //14. console.log’e, naudojant ciklą atspausdinti po porą skirtingų atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje). 
 //Skaičiuoti abiejų skaičių sumas skirtinguose kintamuosiuose (skaičiuoti skaičių stulpelių sumas). Ciklą kartoti tol, kol kiekviena iš sumų bus daugiau nei 100;
 
+/*let random1 = 0;
+let random2 = 1;
+let suma1 = 0;
+let suma2 = 0;
+while ((suma1 <= 100) || (suma2 <= 100)) {
+    random1 = Math.trunc(Math.random() * 10 + 1);
+    random2 = Math.trunc(Math.random() * 10 + 1);
+    suma1 += random1;
+    suma2 += random2;
+    console.log(random1, ' ', random2);
+}
+console.log('Suma1: ', suma1, ' Suma2: ', suma2);*/
+
 //15. console.log’e, naudojant ciklą atspausdinti po porą skirtingų atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje). 
 //Ciklą kartoti kol bus sugeneruota po tris arba daugiau nelyginių skaičių  (skaičiai atskiruose stulpeliuose).
+
+let random1 = 0;
+let random2 = 0;
+let nelygSk1 = 0;
+let nelygSk2 = 0;
+
+while ((nelygSk1 < 4) || (nelygSk2 < 4)) {
+    random1 = Math.trunc(Math.random() * 10 + 1);
+    random2 = Math.trunc(Math.random() * 10 + 1);
+    random1 % 2 !== 0 ? nelygSk1++ : '';
+    random2 % 2 !== 0 ? nelygSk2++ : '';
+    console.log(random1, ' ', random2);
+}
+console.log('Nelyginiu skaiciu pirmas stulpelis: ', nelygSk1, ' Nelyginiu skaiciu antras stulpelis: ', nelygSk2);
