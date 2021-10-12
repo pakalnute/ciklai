@@ -82,7 +82,7 @@ let suma = 0;
 let ciklas = 0;
 while ((suma < 20) || (ciklas <= 11)) {
     ciklas++;
-    random = Math.trunc(Math.random() * 10 + 1);
+    random = Math.trunc(Math.random() * 11);
     suma += random;
     console.log(random);
 }
@@ -94,7 +94,7 @@ console.log('Suma: ', suma, ' Kiek ciklu: ', --ciklas);*/
 /*let random = 0;
 let sk = 0;
 while (sk < 3) {
-    random = Math.trunc(Math.random() * 10 + 1);
+    random = Math.trunc(Math.random() * 11);
     random % 2 !== 0 ? sk++ : '';
     console.log(random);
 }*/
@@ -105,8 +105,8 @@ while (sk < 3) {
 /*let random1 = 0;
 let random2 = 1;
 while (random1 !== random2) {
-    random1 = Math.trunc(Math.random() * 10 + 1);
-    random2 = Math.trunc(Math.random() * 10 + 1);
+    random1 = Math.trunc(Math.random() * 11);
+    random2 = Math.trunc(Math.random() * 11);
     console.log(random1, ' ', random2);
 }*/
 
@@ -118,8 +118,8 @@ let random2 = 1;
 let suma1 = 0;
 let suma2 = 0;
 while ((suma1 <= 100) || (suma2 <= 100)) {
-    random1 = Math.trunc(Math.random() * 10 + 1);
-    random2 = Math.trunc(Math.random() * 10 + 1);
+    random1 = Math.trunc(Math.random() * 11);
+    random2 = Math.trunc(Math.random() * 11);
     suma1 += random1;
     suma2 += random2;
     console.log(random1, ' ', random2);
@@ -129,14 +129,14 @@ console.log('Suma1: ', suma1, ' Suma2: ', suma2);*/
 //15. console.log’e, naudojant ciklą atspausdinti po porą skirtingų atsitiktinių skaičių nuo 0 iki 10 (abu skaičiai vienoje eilutėje). 
 //Ciklą kartoti kol bus sugeneruota po tris arba daugiau nelyginių skaičių  (skaičiai atskiruose stulpeliuose).
 
-let random1 = 0;
-let random2 = 0;
+let random1; 
+let random2; 
 let nelygSk1 = 0;
 let nelygSk2 = 0;
 
-while ((nelygSk1 < 4) || (nelygSk2 < 4)) {
-    random1 = Math.trunc(Math.random() * 10 + 1);
-    random2 = Math.trunc(Math.random() * 10 + 1);
+while ((nelygSk1 < 3) || (nelygSk2 < 3)) {
+    random1 = Math.trunc(Math.random() * 11);
+    random2 = Math.trunc(Math.random() * 11);
     random1 % 2 !== 0 ? nelygSk1++ : '';
     random2 % 2 !== 0 ? nelygSk2++ : '';
     console.log(random1, ' ', random2);
